@@ -9,7 +9,7 @@ public static Connection getCon(){
 	try{
 		
 		Class.forName("com.mysql.jdbc.Driver");
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/elibrary", "root","admin");
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "sqablr", "");
 		
 //		Class.forName("oracle.jdbc.driver.OracleDriver");
 //		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");

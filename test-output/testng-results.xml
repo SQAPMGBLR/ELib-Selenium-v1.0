@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="4577" started-at="2017-05-10T09:36:40Z" finished-at="2017-05-10T09:36:44Z">
+  <suite name="Suite" duration-ms="17114" started-at="2017-05-10T13:23:34Z" finished-at="2017-05-10T13:23:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4577" started-at="2017-05-10T09:36:40Z" finished-at="2017-05-10T09:36:44Z">
+    <test name="Test" duration-ms="17114" started-at="2017-05-10T13:23:34Z" finished-at="2017-05-10T13:23:51Z">
       <class name="com.nttdata.test.NewTest">
-        <test-method status="PASS" signature="AddBook()[pri:0, instance:com.nttdata.test.NewTest@c4c815]" name="AddBook" duration-ms="4558" started-at="2017-05-10T15:06:40Z" finished-at="2017-05-10T15:06:44Z">
+        <test-method status="PASS" signature="AddBook()[pri:0, instance:com.nttdata.test.NewTest@18a00e3]" name="AddBook" duration-ms="17098" started-at="2017-05-10T18:53:34Z" finished-at="2017-05-10T18:53:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddBook -->

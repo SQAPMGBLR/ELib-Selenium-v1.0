@@ -12,9 +12,9 @@ public class NewTest {
 //	  WebDriver driver=new FirefoxDriver();
 	  System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 	  WebDriver driver=new ChromeDriver();
-	  driver.get("http://10.248.69.137:6080/ELibrary-Dev");
-      driver.findElement(By.xpath("//form[@action='LibrarianLogin']/div/input[@id='email1']")).sendKeys("vanam.surendra@gmail.com");
-      driver.findElement(By.xpath("//form[@action='LibrarianLogin']/div/input[@id='password1']")).sendKeys("Apr2017");
+	  driver.get("http://localhost:8079/ELibrary-Dev");
+      driver.findElement(By.xpath("//form[@action='LibrarianLogin']/div/input[@id='email1']")).sendKeys("vanam.surendra@nttdata.com");
+      driver.findElement(By.xpath("//form[@action='LibrarianLogin']/div/input[@id='password1']")).sendKeys("apr@2017");
       driver.findElement(By.xpath("//form[@action='LibrarianLogin']//*[text()='Login']")).click();
       /*driver.findElement(By.xpath("//a[.='Add Book']")).click();
       driver.findElement(By.id("callno1")).sendKeys("123");

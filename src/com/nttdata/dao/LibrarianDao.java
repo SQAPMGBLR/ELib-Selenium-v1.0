@@ -25,7 +25,7 @@ public class LibrarianDao {
 			*/
 			
 			con = DB.getCon();
-			PreparedStatement ps=con.prepareStatement("insert into Library(name,email,password,Mob_num) values(?,?,?,?)");
+			PreparedStatement ps=con.prepareStatement("insert into Library(name,email,password,mobile) values(?,?,?,?)");
 			ps.setString(1,bean.getName());
 			ps.setString(2,bean.getEmail());
 			ps.setString(3,bean.getPassword());
@@ -54,7 +54,7 @@ public class LibrarianDao {
 			file.close();*/
 			
 			con = DB.getCon();
-			PreparedStatement ps=con.prepareStatement("update Library set name=?,email=?,password=?,Mob_num=? where id=?");
+			PreparedStatement ps=con.prepareStatement("update Library set name=?,email=?,password=?,mobile=? where id=?");
 			ps.setString(1,bean.getName());
 			ps.setString(2,bean.getEmail());
 			ps.setString(3,bean.getPassword());
@@ -82,7 +82,7 @@ public class LibrarianDao {
 				bean.setName(rs.getString("name"));
 				bean.setEmail(rs.getString("email"));
 				bean.setPassword(rs.getString("password"));
-				bean.setMobile(rs.getLong("Mob_num"));
+				bean.setMobile(rs.getLong("mobile"));
 				list.add(bean);
 			}
 						
