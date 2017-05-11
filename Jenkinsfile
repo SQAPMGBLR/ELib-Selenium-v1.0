@@ -25,5 +25,10 @@ pipeline {
         echo 'Selenium script is completed'
       }
     }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying the application'
+      }
+    }
   }
 }
