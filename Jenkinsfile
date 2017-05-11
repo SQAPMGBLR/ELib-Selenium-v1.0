@@ -7,7 +7,7 @@ pipeline {
         git(url: 'https://github.com/SQAPMGBLR/ELib-Selenium-v1.0', branch: 'master', credentialsId: 'sqapmgblr', poll: true)
       }
     }
-    stage('') {
+    stage('Selenium Testing') {
       steps {
         bat 'selenium'
       }
