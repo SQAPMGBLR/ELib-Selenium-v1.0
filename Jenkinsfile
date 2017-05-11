@@ -7,9 +7,22 @@ pipeline {
         git(url: 'https://github.com/SQAPMGBLR/ELib-Selenium-v1.0', branch: 'master', credentialsId: 'sqapmgblr', poll: true)
       }
     }
+    stage('Sonarqube Analysis') {
+      steps {
+        echo 'SonarQube analysis started .....'
+        bat 'sonar-scanner'
+        echo 'SonarQube analysis completed successfully .....'
+      }
+    }
+    stage('Launch Sonarqube') {
+      steps {
+        bat 'start http://localhost:9000/projects/'
+      }
+    }
     stage('Selenium Testing') {
       steps {
         bat 'selenium'
+        echo 'Selenium script is completed'
       }
     }
   }
